@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://yep0wqmmq0w8"]
+
+[ext_resource type="Script" uid="uid://by4aiyhvw4yk6" path="res://scenes/meteor.gd" id="1_wpk77"]
+[ext_resource type="Texture2D" uid="uid://blejiky221bc0" path="res://PNG/Sprites/Meteors/spaceMeteors_003.png" id="2_grths"]
+
+[node name="Meteor3" type="Area2D" unique_id=972261219]
+script = ExtResource("1_wpk77")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=467929068]
+texture = ExtResource("2_grths")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1470562501]
+polygon = PackedVector2Array(4, -111, -60, -80, -105, -34, -102, 31, -66, 91, 1, 111, 68, 99, 103, 39, 105, -27, 70, -85)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
