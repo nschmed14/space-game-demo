@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bunu4b7ucv5ww"]
+
+[ext_resource type="Script" uid="uid://c07m11cmn1m3b" path="res://scenes/laser.gd" id="1_ag3aa"]
+[ext_resource type="Texture2D" uid="uid://bvc17medlelbe" path="res://PNG/Sprites/Effects/spaceEffects_007.png" id="2_ha5if"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvgf4"]
+size = Vector2(6, 73)
+
+[node name="Laser" type="Area2D" unique_id=133230702]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_ag3aa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=92481669]
+texture = ExtResource("2_ha5if")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1198637542]
+position = Vector2(0, -26.5)
+shape = SubResource("RectangleShape2D_rvgf4")

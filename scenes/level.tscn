@@ -4,6 +4,27 @@
 [ext_resource type="Script" uid="uid://co7lfgdqmfhv8" path="res://scenes/level.gd" id="1_ppgk2"]
 [ext_resource type="Texture2D" uid="uid://st8fu22uyxon" path="res://PNG/Sprites/Space_Background1.png" id="2_mx8sn"]
 [ext_resource type="Texture2D" uid="uid://b3n7n25iihxl2" path="res://PNG/Sprites/Ships/spaceShips_004.png" id="2_w8frs"]
+[ext_resource type="Texture2D" uid="uid://bgajhknp5pr0f" path="res://PNG/Effects/star1.png" id="5_klq6b"]
+[ext_resource type="Texture2D" uid="uid://dqowg4536svsr" path="res://PNG/Effects/star2.png" id="6_b121j"]
+[ext_resource type="Texture2D" uid="uid://b1ada7vn2tjh2" path="res://PNG/Effects/star3.png" id="7_8c41q"]
+[ext_resource type="PackedScene" uid="uid://bnh7itlbnaijd" path="res://scenes/ui.tscn" id="8_b121j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgy2a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_klq6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b121j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8c41q")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 30.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvgf4"]
 size = Vector2(10, 922)
@@ -18,6 +39,1210 @@ script = ExtResource("1_ppgk2")
 position = Vector2(715.99994, 436.5)
 scale = Vector2(0.80312496, 0.90833336)
 texture = ExtResource("2_mx8sn")
+metadata/_edit_lock_ = true
+
+[node name="Stars" type="Node2D" parent="." unique_id=1504470681]
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars" unique_id=1557192844]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.67737186
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D51" type="AnimatedSprite2D" parent="Stars" unique_id=1345512382]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D52" type="AnimatedSprite2D" parent="Stars" unique_id=388613616]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D53" type="AnimatedSprite2D" parent="Stars" unique_id=31673068]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D54" type="AnimatedSprite2D" parent="Stars" unique_id=1416030740]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D55" type="AnimatedSprite2D" parent="Stars" unique_id=2019236618]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D56" type="AnimatedSprite2D" parent="Stars" unique_id=1407622971]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D57" type="AnimatedSprite2D" parent="Stars" unique_id=471535526]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D58" type="AnimatedSprite2D" parent="Stars" unique_id=247242856]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D59" type="AnimatedSprite2D" parent="Stars" unique_id=847016861]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D60" type="AnimatedSprite2D" parent="Stars" unique_id=783677911]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D61" type="AnimatedSprite2D" parent="Stars" unique_id=756592887]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D62" type="AnimatedSprite2D" parent="Stars" unique_id=1659952689]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D63" type="AnimatedSprite2D" parent="Stars" unique_id=1335080063]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D64" type="AnimatedSprite2D" parent="Stars" unique_id=1598566829]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D65" type="AnimatedSprite2D" parent="Stars" unique_id=342070861]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D66" type="AnimatedSprite2D" parent="Stars" unique_id=787858612]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D67" type="AnimatedSprite2D" parent="Stars" unique_id=2051469315]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D68" type="AnimatedSprite2D" parent="Stars" unique_id=769309963]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D69" type="AnimatedSprite2D" parent="Stars" unique_id=1592147772]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D70" type="AnimatedSprite2D" parent="Stars" unique_id=424128658]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D71" type="AnimatedSprite2D" parent="Stars" unique_id=1858711271]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D72" type="AnimatedSprite2D" parent="Stars" unique_id=1048307432]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D73" type="AnimatedSprite2D" parent="Stars" unique_id=492272977]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D74" type="AnimatedSprite2D" parent="Stars" unique_id=1846993312]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D75" type="AnimatedSprite2D" parent="Stars" unique_id=1864420655]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D76" type="AnimatedSprite2D" parent="Stars" unique_id=196117708]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D77" type="AnimatedSprite2D" parent="Stars" unique_id=720704622]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D78" type="AnimatedSprite2D" parent="Stars" unique_id=1022998830]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D79" type="AnimatedSprite2D" parent="Stars" unique_id=15173212]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D80" type="AnimatedSprite2D" parent="Stars" unique_id=1563729258]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D81" type="AnimatedSprite2D" parent="Stars" unique_id=1141763563]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D82" type="AnimatedSprite2D" parent="Stars" unique_id=1682332042]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D83" type="AnimatedSprite2D" parent="Stars" unique_id=1190578974]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D84" type="AnimatedSprite2D" parent="Stars" unique_id=1909852409]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D85" type="AnimatedSprite2D" parent="Stars" unique_id=740032422]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D86" type="AnimatedSprite2D" parent="Stars" unique_id=529768846]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D87" type="AnimatedSprite2D" parent="Stars" unique_id=965407552]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D88" type="AnimatedSprite2D" parent="Stars" unique_id=382669105]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D89" type="AnimatedSprite2D" parent="Stars" unique_id=419905184]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D90" type="AnimatedSprite2D" parent="Stars" unique_id=51104615]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D91" type="AnimatedSprite2D" parent="Stars" unique_id=1306489695]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D92" type="AnimatedSprite2D" parent="Stars" unique_id=1742591293]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D93" type="AnimatedSprite2D" parent="Stars" unique_id=746423006]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D94" type="AnimatedSprite2D" parent="Stars" unique_id=1797562940]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D95" type="AnimatedSprite2D" parent="Stars" unique_id=562618524]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D96" type="AnimatedSprite2D" parent="Stars" unique_id=1591203240]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D97" type="AnimatedSprite2D" parent="Stars" unique_id=1369170862]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D98" type="AnimatedSprite2D" parent="Stars" unique_id=564264712]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D99" type="AnimatedSprite2D" parent="Stars" unique_id=209156147]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D100" type="AnimatedSprite2D" parent="Stars" unique_id=644033838]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D101" type="AnimatedSprite2D" parent="Stars" unique_id=1645275868]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D102" type="AnimatedSprite2D" parent="Stars" unique_id=1008677695]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D103" type="AnimatedSprite2D" parent="Stars" unique_id=15527135]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D104" type="AnimatedSprite2D" parent="Stars" unique_id=1033552487]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D105" type="AnimatedSprite2D" parent="Stars" unique_id=1874293092]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D106" type="AnimatedSprite2D" parent="Stars" unique_id=741436424]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D107" type="AnimatedSprite2D" parent="Stars" unique_id=2093901096]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D108" type="AnimatedSprite2D" parent="Stars" unique_id=627016708]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D109" type="AnimatedSprite2D" parent="Stars" unique_id=179306661]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D110" type="AnimatedSprite2D" parent="Stars" unique_id=1840102404]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D111" type="AnimatedSprite2D" parent="Stars" unique_id=1395250172]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D112" type="AnimatedSprite2D" parent="Stars" unique_id=393127018]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D113" type="AnimatedSprite2D" parent="Stars" unique_id=929247357]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D114" type="AnimatedSprite2D" parent="Stars" unique_id=1905956685]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D115" type="AnimatedSprite2D" parent="Stars" unique_id=535341422]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D116" type="AnimatedSprite2D" parent="Stars" unique_id=1509796494]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D117" type="AnimatedSprite2D" parent="Stars" unique_id=1895516755]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D118" type="AnimatedSprite2D" parent="Stars" unique_id=1180926680]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D119" type="AnimatedSprite2D" parent="Stars" unique_id=768646891]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D120" type="AnimatedSprite2D" parent="Stars" unique_id=1649623969]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D121" type="AnimatedSprite2D" parent="Stars" unique_id=586761599]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D122" type="AnimatedSprite2D" parent="Stars" unique_id=1644554692]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D123" type="AnimatedSprite2D" parent="Stars" unique_id=1566919008]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D124" type="AnimatedSprite2D" parent="Stars" unique_id=1499134526]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D125" type="AnimatedSprite2D" parent="Stars" unique_id=1059452869]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D126" type="AnimatedSprite2D" parent="Stars" unique_id=125508127]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D127" type="AnimatedSprite2D" parent="Stars" unique_id=1774085943]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D128" type="AnimatedSprite2D" parent="Stars" unique_id=722317806]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D129" type="AnimatedSprite2D" parent="Stars" unique_id=1942013233]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D130" type="AnimatedSprite2D" parent="Stars" unique_id=358757284]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D131" type="AnimatedSprite2D" parent="Stars" unique_id=2110692672]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D132" type="AnimatedSprite2D" parent="Stars" unique_id=2062111059]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D133" type="AnimatedSprite2D" parent="Stars" unique_id=1449575011]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D134" type="AnimatedSprite2D" parent="Stars" unique_id=340195595]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D135" type="AnimatedSprite2D" parent="Stars" unique_id=2092523936]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D136" type="AnimatedSprite2D" parent="Stars" unique_id=1143420505]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D137" type="AnimatedSprite2D" parent="Stars" unique_id=1116084568]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D138" type="AnimatedSprite2D" parent="Stars" unique_id=285595243]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D139" type="AnimatedSprite2D" parent="Stars" unique_id=1501165495]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D140" type="AnimatedSprite2D" parent="Stars" unique_id=1155551407]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D141" type="AnimatedSprite2D" parent="Stars" unique_id=670003377]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D142" type="AnimatedSprite2D" parent="Stars" unique_id=544051160]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D143" type="AnimatedSprite2D" parent="Stars" unique_id=1512062619]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D144" type="AnimatedSprite2D" parent="Stars" unique_id=1540361406]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D145" type="AnimatedSprite2D" parent="Stars" unique_id=529138785]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D146" type="AnimatedSprite2D" parent="Stars" unique_id=1486923547]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D147" type="AnimatedSprite2D" parent="Stars" unique_id=1755887972]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D148" type="AnimatedSprite2D" parent="Stars" unique_id=221096673]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D149" type="AnimatedSprite2D" parent="Stars" unique_id=1464642748]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D150" type="AnimatedSprite2D" parent="Stars" unique_id=2134588493]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D151" type="AnimatedSprite2D" parent="Stars" unique_id=178351021]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D152" type="AnimatedSprite2D" parent="Stars" unique_id=1250825670]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D153" type="AnimatedSprite2D" parent="Stars" unique_id=565619328]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D154" type="AnimatedSprite2D" parent="Stars" unique_id=133924783]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D155" type="AnimatedSprite2D" parent="Stars" unique_id=1786769646]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D156" type="AnimatedSprite2D" parent="Stars" unique_id=1903619147]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D157" type="AnimatedSprite2D" parent="Stars" unique_id=1250735533]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D158" type="AnimatedSprite2D" parent="Stars" unique_id=512698715]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D159" type="AnimatedSprite2D" parent="Stars" unique_id=546351210]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D160" type="AnimatedSprite2D" parent="Stars" unique_id=247719040]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D161" type="AnimatedSprite2D" parent="Stars" unique_id=969384925]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D162" type="AnimatedSprite2D" parent="Stars" unique_id=448742546]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D163" type="AnimatedSprite2D" parent="Stars" unique_id=428490470]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D164" type="AnimatedSprite2D" parent="Stars" unique_id=1357795139]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D165" type="AnimatedSprite2D" parent="Stars" unique_id=1120537508]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D166" type="AnimatedSprite2D" parent="Stars" unique_id=1108151269]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D167" type="AnimatedSprite2D" parent="Stars" unique_id=1457745137]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D168" type="AnimatedSprite2D" parent="Stars" unique_id=1818582050]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D169" type="AnimatedSprite2D" parent="Stars" unique_id=339645392]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D170" type="AnimatedSprite2D" parent="Stars" unique_id=76029174]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D171" type="AnimatedSprite2D" parent="Stars" unique_id=1292217908]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D172" type="AnimatedSprite2D" parent="Stars" unique_id=2137429321]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D173" type="AnimatedSprite2D" parent="Stars" unique_id=149023511]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D174" type="AnimatedSprite2D" parent="Stars" unique_id=1136768538]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D175" type="AnimatedSprite2D" parent="Stars" unique_id=1587046428]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D176" type="AnimatedSprite2D" parent="Stars" unique_id=1450619532]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D177" type="AnimatedSprite2D" parent="Stars" unique_id=804293925]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D178" type="AnimatedSprite2D" parent="Stars" unique_id=1540683609]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D179" type="AnimatedSprite2D" parent="Stars" unique_id=1657161640]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D180" type="AnimatedSprite2D" parent="Stars" unique_id=617793793]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D181" type="AnimatedSprite2D" parent="Stars" unique_id=1982779601]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D182" type="AnimatedSprite2D" parent="Stars" unique_id=1717626797]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D183" type="AnimatedSprite2D" parent="Stars" unique_id=498224935]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D184" type="AnimatedSprite2D" parent="Stars" unique_id=497131355]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D185" type="AnimatedSprite2D" parent="Stars" unique_id=538696509]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D186" type="AnimatedSprite2D" parent="Stars" unique_id=1183652820]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D187" type="AnimatedSprite2D" parent="Stars" unique_id=1981179710]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D188" type="AnimatedSprite2D" parent="Stars" unique_id=260664748]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D189" type="AnimatedSprite2D" parent="Stars" unique_id=2122457989]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D190" type="AnimatedSprite2D" parent="Stars" unique_id=2140361137]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D191" type="AnimatedSprite2D" parent="Stars" unique_id=1085787541]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D192" type="AnimatedSprite2D" parent="Stars" unique_id=1158699204]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D193" type="AnimatedSprite2D" parent="Stars" unique_id=1133763952]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D194" type="AnimatedSprite2D" parent="Stars" unique_id=160343421]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D195" type="AnimatedSprite2D" parent="Stars" unique_id=54419030]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D196" type="AnimatedSprite2D" parent="Stars" unique_id=1828633983]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D197" type="AnimatedSprite2D" parent="Stars" unique_id=721120460]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D198" type="AnimatedSprite2D" parent="Stars" unique_id=218884221]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D199" type="AnimatedSprite2D" parent="Stars" unique_id=226003415]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D200" type="AnimatedSprite2D" parent="Stars" unique_id=1163547694]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.5658122
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Stars" unique_id=1612663546]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars" unique_id=112870983]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars" unique_id=942079051]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars" unique_id=1820023224]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Stars" unique_id=306311457]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars" unique_id=1649255678]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Stars" unique_id=2134644433]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Stars" unique_id=1433877588]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Stars" unique_id=60399816]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Stars" unique_id=219768183]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Stars" unique_id=409947779]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Stars" unique_id=125122084]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Stars" unique_id=855987809]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Stars" unique_id=860047863]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Stars" unique_id=1564976333]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Stars" unique_id=1688215260]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Stars" unique_id=1581563842]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Stars" unique_id=1678257211]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Stars" unique_id=1056437792]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Stars" unique_id=1486331686]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D22" type="AnimatedSprite2D" parent="Stars" unique_id=996689297]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D23" type="AnimatedSprite2D" parent="Stars" unique_id=24717860]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D24" type="AnimatedSprite2D" parent="Stars" unique_id=152127107]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D25" type="AnimatedSprite2D" parent="Stars" unique_id=2003445350]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D26" type="AnimatedSprite2D" parent="Stars" unique_id=1103919894]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D27" type="AnimatedSprite2D" parent="Stars" unique_id=173168546]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D28" type="AnimatedSprite2D" parent="Stars" unique_id=1500094394]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D29" type="AnimatedSprite2D" parent="Stars" unique_id=1453419286]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D30" type="AnimatedSprite2D" parent="Stars" unique_id=1011150843]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D31" type="AnimatedSprite2D" parent="Stars" unique_id=1048261429]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D32" type="AnimatedSprite2D" parent="Stars" unique_id=2018492809]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D33" type="AnimatedSprite2D" parent="Stars" unique_id=1479898787]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D34" type="AnimatedSprite2D" parent="Stars" unique_id=1884618702]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D35" type="AnimatedSprite2D" parent="Stars" unique_id=669162164]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D36" type="AnimatedSprite2D" parent="Stars" unique_id=1117082209]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D37" type="AnimatedSprite2D" parent="Stars" unique_id=339562908]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D38" type="AnimatedSprite2D" parent="Stars" unique_id=1726467410]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D39" type="AnimatedSprite2D" parent="Stars" unique_id=1704385530]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D40" type="AnimatedSprite2D" parent="Stars" unique_id=1778003335]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D41" type="AnimatedSprite2D" parent="Stars" unique_id=1273492561]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D42" type="AnimatedSprite2D" parent="Stars" unique_id=1936853951]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D43" type="AnimatedSprite2D" parent="Stars" unique_id=419325316]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D44" type="AnimatedSprite2D" parent="Stars" unique_id=503444950]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D45" type="AnimatedSprite2D" parent="Stars" unique_id=1925372788]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D46" type="AnimatedSprite2D" parent="Stars" unique_id=1620679253]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D47" type="AnimatedSprite2D" parent="Stars" unique_id=555230224]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D48" type="AnimatedSprite2D" parent="Stars" unique_id=575825100]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D49" type="AnimatedSprite2D" parent="Stars" unique_id=92834189]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
+
+[node name="AnimatedSprite2D50" type="AnimatedSprite2D" parent="Stars" unique_id=481541032]
+sprite_frames = SubResource("SpriteFrames_vgy2a")
+autoplay = "default"
+frame_progress = 0.36086744
+speed_scale = 0.3
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=899886535]
 position = Vector2(640, 360)
@@ -30,7 +1255,16 @@ texture = ExtResource("2_w8frs")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player" unique_id=755717214]
 polygon = PackedVector2Array(0, -38, -15, -27, -20, -30, -28, -33, -28, -53, -45, -53, -45, -33, -51, -31, -56, -24, -55, -17, -63, 2, -63, 19, -46, 48, -40, 52, -22, 54, -21, 22, -24, 16, -12, 24, 10, 24, 26, 15, 25, 23, 21, 23, 23, 35, 21, 53, 33, 53, 42, 52, 62, 25, 64, 7, 57, -10, 55, -14, 55, -26, 49, -31, 45, -32, 45, -49, 42, -53, 33, -53, 29, -50, 29, -34, 21, -34, 15, -27)
 
+[node name="LaserStartPOS" type="Marker2D" parent="Player" unique_id=1753891371]
+position = Vector2(0, -53)
+gizmo_extents = 18.8
+
+[node name="LaserTimer" type="Timer" parent="Player" unique_id=1019558299]
+wait_time = 0.5
+one_shot = true
+
 [node name="Borders" type="Node2D" parent="." unique_id=182865359]
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=344326915]
 collision_layer = 4
@@ -65,5 +1299,14 @@ wait_time = 0.25
 autostart = true
 
 [node name="Meteors" type="Node2D" parent="." unique_id=20853873]
+metadata/_edit_lock_ = true
 
+[node name="Lasers" type="Node2D" parent="." unique_id=975187028]
+metadata/_edit_lock_ = true
+
+[node name="UI" parent="." unique_id=672787199 instance=ExtResource("8_b121j")]
+
+[connection signal="laser" from="Player" to="." method="_on_player_laser"]
+[connection signal="timeout" from="Player/LaserTimer" to="." method="_on_laser_timer_timeout"]
+[connection signal="timeout" from="Player/LaserTimer" to="Player" method="_on_laser_timer_timeout"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]

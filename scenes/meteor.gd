@@ -1,8 +1,9 @@
 extends Area2D
 
+var rng := RandomNumberGenerator.new()
+
 #spawn logic
 func _ready():
-	var rng := RandomNumberGenerator.new()
 	var width = get_viewport().get_visible_rect().size[0]
 	var random_x = rng.randi_range(0, width)
 	var random_y = rng.randi_range(-150, -50)
@@ -12,7 +13,6 @@ func _ready():
 	$Sprite2D.texture = load(path)
 	
 #movement variable creation and randomization
-var rng := RandomNumberGenerator.new()
 var speed := rng.randi_range(200, 500)
 var spin := (rng.randf_range(-0.2, 0.2))
 var angle:= (rng.randf_range(-1, 1))
@@ -22,5 +22,5 @@ func _process(delta):
 	position += Vector2(angle, 1.0) * speed * delta
 	rotate(spin)
 	
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	print('meteor entered')
