@@ -2,6 +2,8 @@ extends Area2D
 
 var rng := RandomNumberGenerator.new()
 
+signal collision
+
 #spawn logic
 func _ready():
 	var width = get_viewport().get_visible_rect().size[0]
@@ -23,4 +25,8 @@ func _process(delta):
 	rotate(spin)
 	
 func _on_body_entered(_body):
-	print('meteor entered')
+	collision.emit()
+	
+func _on_area_entered(area):
+	area.queue_free()
+	queue_free()
