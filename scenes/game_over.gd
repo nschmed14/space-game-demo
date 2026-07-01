@@ -4,6 +4,7 @@ extends Control
 
 func _ready():
 	$"CenterContainer/VBoxContainer/YOUR SCORE".text = $"CenterContainer/VBoxContainer/YOUR SCORE".text + str(Global.score)
+	$GameOver.play()
 		
 func _input(event):
 	if event.is_action_pressed("respawn"):

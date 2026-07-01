@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://dwl0xgucppleb" path="res://font/Pixel Game.otf" id="1_6bcno"]
 [ext_resource type="Script" uid="uid://cd3c4bq030kjr" path="res://scenes/game_over.gd" id="1_qae0b"]
+[ext_resource type="AudioStream" uid="uid://bswa2ruj626y6" path="res://audio/lightyeartraxx-kim-lightyear-leave-the-world-tonight-chiptune-edit-loop-132102.mp3" id="3_vuicl"]
 
 [node name="Game Over" type="Control" unique_id=263444259]
 layout_mode = 3
@@ -66,3 +67,8 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_6bcno")
 theme_override_font_sizes/font_size = 64
 text = "SPACE TO START AGAIN"
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=1287762101]
+stream = ExtResource("3_vuicl")
+volume_db = -10.035
+parameters/looping = true

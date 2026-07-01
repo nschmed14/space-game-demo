@@ -6,6 +6,7 @@ var laser_scene: PackedScene = load("res://scenes/Laser.tscn")
 var health := 5
 
 func _ready():
+	$AudioStreamPlayer2D.play()
 	var size := get_viewport().get_visible_rect().size
 	var rng := RandomNumberGenerator.new()
 	for star in $Stars.get_children():
@@ -31,6 +32,7 @@ func _on_meteor_collision():
 	get_tree().call_group('UI', 'set_health', health)
 	if health <= 0:
 		get_tree().change_scene_to_file("res://scenes/GameOver.tscn")
+	$Player.play_collision_sound()
 
 func _on_player_laser(pos):
 	var laser = laser_scene.instantiate()

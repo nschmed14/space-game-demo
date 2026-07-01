@@ -3,11 +3,14 @@
 [ext_resource type="Script" uid="uid://nie4p05r7fio" path="res://scenes/player.gd" id="1_2q6dc"]
 [ext_resource type="Script" uid="uid://co7lfgdqmfhv8" path="res://scenes/level.gd" id="1_ppgk2"]
 [ext_resource type="Texture2D" uid="uid://st8fu22uyxon" path="res://PNG/Sprites/Space_Background1.png" id="2_mx8sn"]
+[ext_resource type="AudioStream" uid="uid://dpf0i7bnwae7e" path="res://audio/djartmusic-the-return-of-the-8-bit-era-301292.mp3" id="2_olg7q"]
 [ext_resource type="Texture2D" uid="uid://b3n7n25iihxl2" path="res://PNG/Sprites/Ships/spaceShips_004.png" id="2_w8frs"]
 [ext_resource type="Texture2D" uid="uid://bgajhknp5pr0f" path="res://PNG/Effects/star1.png" id="5_klq6b"]
 [ext_resource type="Texture2D" uid="uid://dqowg4536svsr" path="res://PNG/Effects/star2.png" id="6_b121j"]
 [ext_resource type="Texture2D" uid="uid://b1ada7vn2tjh2" path="res://PNG/Effects/star3.png" id="7_8c41q"]
+[ext_resource type="AudioStream" uid="uid://c0xc8krxmg7bd" path="res://audio/laserSmall_000.ogg" id="8_8c41q"]
 [ext_resource type="PackedScene" uid="uid://bnh7itlbnaijd" path="res://scenes/ui.tscn" id="8_b121j"]
+[ext_resource type="AudioStream" uid="uid://bemd1ia3hdel1" path="res://audio/lowFrequency_explosion_001.ogg" id="10_t1rx8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vgy2a"]
 animations = [{
@@ -26,6 +29,15 @@ animations = [{
 "speed": 30.0
 }]
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vgy2a"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 12.36
+gravity = Vector3(0, 20, 0)
+scale_min = 14.2699995
+scale_max = 14.2699995
+color = Color(0.81960785, 0.5568628, 0, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvgf4"]
 size = Vector2(10, 922)
 
@@ -34,6 +46,12 @@ size = Vector2(1550, 10)
 
 [node name="level" type="Node2D" unique_id=1209409863]
 script = ExtResource("1_ppgk2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1149984869]
+stream = ExtResource("2_olg7q")
+volume_db = -20.982
+autoplay = true
+parameters/looping = true
 
 [node name="BG" type="Sprite2D" parent="." unique_id=2093508675]
 position = Vector2(715.99994, 436.5)
@@ -1249,6 +1267,11 @@ position = Vector2(640, 360)
 collision_mask = 6
 script = ExtResource("1_2q6dc")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Player" unique_id=985718930]
+position = Vector2(-1, 30)
+lifetime = 0.4
+process_material = SubResource("ParticleProcessMaterial_vgy2a")
+
 [node name="PlayerImage" type="Sprite2D" parent="Player" unique_id=548435856]
 texture = ExtResource("2_w8frs")
 
@@ -1262,6 +1285,13 @@ gizmo_extents = 18.8
 [node name="LaserTimer" type="Timer" parent="Player" unique_id=1019558299]
 wait_time = 0.5
 one_shot = true
+
+[node name="LaserSound" type="AudioStreamPlayer2D" parent="Player" unique_id=257200191]
+stream = ExtResource("8_8c41q")
+
+[node name="ExplosionSound" type="AudioStreamPlayer2D" parent="Player" unique_id=1288853592]
+stream = ExtResource("10_t1rx8")
+volume_db = 10.877
 
 [node name="Borders" type="Node2D" parent="." unique_id=182865359]
 metadata/_edit_lock_ = true

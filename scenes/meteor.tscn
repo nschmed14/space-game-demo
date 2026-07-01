@@ -14,5 +14,7 @@ texture = ExtResource("2_83eji")
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1470562501]
 polygon = PackedVector2Array(3, -103, -70, -80, -106, -34, -103, 29, -73, 97, -3, 105, 66, 85, 103, 39, 107, -30, 64, -85)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=469036473]
+
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
